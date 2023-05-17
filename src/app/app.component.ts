@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tesztelgetes';
+  cim="Szia";
+  userName="Alap";
+  users:any=[];
+
+  addUser(username:string){
+    this.users.push(username);
+  }
+  deleteUsers(){
+    this.users=[];
+  }
 }
